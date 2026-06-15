@@ -41,7 +41,7 @@ upstream package and are **shared, untouched**, with any OpenCode sessions.
 ## Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/opencode-browser-claude.git
+git clone https://github.com/cultlead3r/opencode-browser-claude.git
 cd opencode-browser-claude
 ./install.sh
 ```
