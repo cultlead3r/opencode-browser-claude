@@ -1,7 +1,10 @@
 # opencode-browser-claude
 
+The Claude for Chrome plugin constantly demands permission. There's no simple way to avoid it, so this makes OpenCode's equivalent browser automation plugin work with Claude Code. Slop instructions below.
+
+
 Use the excellent [`@different-ai/opencode-browser`](https://github.com/different-ai/opencode-browser)
-browser-automation tools from **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)**.
+browser-automation tools inside **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)**.
 
 `opencode-browser` ships as an **OpenCode** plugin, so Claude Code can't load it
 directly. This repo is a tiny, zero-dependency **MCP (Model Context Protocol)
