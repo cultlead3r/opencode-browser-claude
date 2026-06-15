@@ -1,0 +1,42 @@
+{
+  "name": "opencode-browser-claude",
+  "version": "1.0.0",
+  "description": "MCP bridge + skill to use @different-ai/opencode-browser's browser automation tools from Claude Code.",
+  "type": "module",
+  "bin": {
+    "opencode-browser-claude": "bin/server.mjs"
+  },
+  "files": [
+    "bin",
+    "skills",
+    "install.sh",
+    "uninstall.sh",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node bin/server.mjs --check",
+    "start": "node bin/server.mjs",
+    "setup": "./install.sh",
+    "teardown": "./uninstall.sh"
+  },
+  "keywords": [
+    "claude-code",
+    "mcp",
+    "model-context-protocol",
+    "browser",
+    "automation",
+    "opencode",
+    "chrome",
+    "brave"
+  ],
+  "author": "cultleader",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/opencode-browser-claude.git"
+  }
+}

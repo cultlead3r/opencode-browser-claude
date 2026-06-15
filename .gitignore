@@ -1,0 +1,15 @@
+# Logs
+*.log
+
+# Vendored upstream bundle (optional fallback, not shipped)
+bin/vendor/
+
+# OS / editor cruft
+.DS_Store
+*.swp
+
+# Node (this project is dependency-free, but just in case)
+node_modules/
+
+# Backups written by configure-claude.mjs if run inside the repo
+*.bak
