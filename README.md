@@ -37,9 +37,9 @@ upstream package and are **shared, untouched**, with any OpenCode sessions.
    bunx @different-ai/opencode-browser@latest install
    ```
 
-   This installs the broker + native messaging host and walks you through
-   loading the browser extension. Follow its prompts and pin the extension.
-   (You do **not** need to use OpenCode itself — only this one-time setup.)
+   This installs the broker + native messaging host. (You do **not** need to
+   use OpenCode itself — only this one-time setup.) You do not need its
+   extension: this repo ships a patched build, installed in the next step.
 
 ## Install
 
@@ -54,6 +54,8 @@ That will:
 - Verify it can find the `opencode-browser` plugin bundle (`bin/server.mjs --check`)
 - Register the MCP server with Claude Code at **user scope** (all projects)
 - Install the `browser-automation` skill to `~/.claude/skills/`
+- Install the patched extension to `~/.opencode-browser/extension-claude` and
+  print instructions for loading it
 
 Restart Claude Code (or start a new session) and the tools appear as
 `mcp__opencode-browser__browser_*`.
@@ -115,6 +117,61 @@ to `false`. Undo it with `./uninstall.sh --reenable-claude-in-chrome`.
 
 The bridge logs to `~/.opencode-browser/claude-mcp.log`.
 
+## Trusted clicks
+
+The upstream extension clicks by dispatching `mouseover / mousemove /
+mousedown / mouseup / click` from a content script. That misses two things:
+
+- **No pointer events.** Component libraries built on Primer, Radix and
+  Headless UI open menus from `pointerdown`, so a mouse-only sequence does
+  nothing at all. GitHub's issue-form dropdowns are one example.
+- **`isTrusted === false`.** Anything that checks event trust ignores it.
+
+The extension in `extension/` fixes both. `browser_click` now resolves the
+element in the page, hands its viewport coordinates to the service worker, and
+dispatches `Input.dispatchMouseEvent` over the **debugger** session — a real
+click through the browser's own input pipeline. The synthetic path is kept as a
+fallback (now with pointer events included) for when the debugger can't attach,
+e.g. because DevTools already owns the tab. Results say which path ran:
+
+```
+Clicked button (trusted)
+Clicked button (synthetic -- trusted click unavailable: <reason>)
+```
+
+One behavioural difference to know about: a trusted click lands at the
+element's centre *coordinates*, so it hits whatever is topmost there. If
+something overlays the target, the click goes to the overlay — same as it would
+for a human, and unlike the old synthetic path, which dispatched straight at
+the element regardless of what was covering it.
+
+This needs no new permissions — `"debugger"` is already in the upstream
+manifest, and the console/errors tools already attach a session. A session
+opened for a click is detached immediately afterwards, so the "is debugging
+this browser" banner doesn't stay up; a session already open for log capture is
+left alone.
+
+Because `manifest.json` pins the extension ID with a `key`, the patched build
+keeps ID `ncfalpcdanbcccbaakenefpokeioldgd` and the native messaging host's
+`allowed_origins` still matches, wherever the directory lives. The flip side:
+it and the upstream extension **cannot both be loaded** — same ID.
+
+### Why not upstream's CDP rewrite?
+
+Upstream replaced this whole architecture with direct CDP in May 2026 (v5.0.0,
+republished as `opencode-chrome-devtools`). It was never released under the old
+name — npm `@different-ai/opencode-browser` is still 4.6.1. That rewrite drops
+the extension, native host and broker, which buys trusted input and
+`browser_eval`, but costs two things this repo cares about:
+
+- **Your real profile.** Since Chrome 136, `--remote-debugging-port` is ignored
+  unless paired with a non-default `--user-data-dir`, so CDP can't attach to
+  your everyday browser and its logins.
+- **17 of 24 tools.** The CDP package ships 7.
+
+`chrome.debugger` is an extension API and isn't subject to that restriction, so
+the patch above takes the good part of the rewrite without either cost.
+
 ## How it works
 
 `bin/server.mjs` imports the upstream `dist/plugin.js` and calls its exported
@@ -150,8 +207,12 @@ git pull
 ./install.sh        # re-registers; picks up any changes
 ```
 
-To update the underlying browser tooling: `bunx @different-ai/opencode-browser@latest update`
-(then reload the extension in your browser).
+To update the underlying broker/native host: `bunx @different-ai/opencode-browser@latest update`.
+That rewrites `~/.opencode-browser/extension`, which you are no longer loading —
+re-run `./install.sh` to refresh `extension-claude` and reload it in the browser.
+
+Note that upstream's npm package has been frozen at 4.6.1 since Feb 2026; see
+"Why not upstream's CDP rewrite?" above.
 
 ## Uninstall
 

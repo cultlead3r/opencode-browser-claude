@@ -52,11 +52,38 @@ browser tools.** They are disabled by policy on this machine. Use the
 - `css:label:has(input)` to force CSS
 - Selector-based tools wait up to 2000ms by default; set `timeoutMs: 0` to disable.
 
+## Clicking
+
+`browser_click` dispatches a **trusted** click through the debugger: it resolves
+the element, then sends real mouse events at its centre. This works on controls
+that ignore synthetic events — Primer/Radix/Headless UI menus that open on
+`pointerdown`, React-controlled checkboxes, and anything checking `isTrusted`.
+
+The result line tells you which path ran:
+
+- `Clicked <selector> (trusted)` — real click, believe it
+- `Clicked <selector> (synthetic -- trusted click unavailable: <reason>)` —
+  fell back; the click may have had no effect. Common reasons: DevTools already
+  owns the tab (close it and retry), or the debugger permission was declined.
+
+If a menu or custom control doesn't respond after a `(synthetic)` result, that
+is the cause — don't keep trying more selectors.
+
+A trusted click lands at the element's centre **coordinates**, so it hits
+whatever is topmost there, exactly as a human click would. If a banner, toast
+or modal overlays the target, dismiss it first; retrying the same selector will
+keep hitting the overlay.
+
 ## Selecting options
 
 - Use `browser_select` for native `<select>` elements
 - Prefer `value` or `label`; use `optionIndex` when needed
 - Example: `browser_select({ selector: "select", value: "plugin" })`
+- **Not every dropdown is a `<select>`.** GitHub, Linear and most design systems
+  render a button plus a floating listbox. Check with
+  `browser_query({ selector: "select", mode: "exists" })`; if there is none,
+  click the trigger, then `browser_query` `mode=list` for `[role="option"]`,
+  `[role="menuitemradio"]` or `li`, and click the option by `index`.
 
 ## Uploads / downloads
 
@@ -86,3 +113,6 @@ browser tools.** They are disabled by policy on this machine. Use the
 - CLI debugging (optional, talks to the same broker):
   `npx @different-ai/opencode-browser tool browser_status`
 - Always confirm results after each action.
+- **Verify what you typed.** `browser_type` reports the text it sent, not what
+  landed. Read it back with `browser_query` `mode=value` — markdown editors and
+  rich text fields can swallow or transform input.
