@@ -557,7 +557,31 @@ async function pageOps(command, args) {
         results.push(el)
       }
     }
-    return results
+
+    return rankTextMatches(results, target)
+  }
+
+  // `matchesText` accepts a substring, and the candidate list includes
+  // `[tabindex]`, so any dialog or form wrapper carrying tabindex="-1" matches
+  // every string inside it -- and, being an ancestor, lands first in document
+  // order. Clicking that wrapper aims at the centre of the whole form rather
+  // than at the control. Two passes fix it:
+  //
+  //   1. keep only the innermost matches (drop any element that contains
+  //      another match), then
+  //   2. prefer elements whose own text *is* the target over ones that merely
+  //      contain it.
+  function rankTextMatches(results, target) {
+    if (results.length < 2) return results
+
+    const innermost = results.filter(
+      (el) => !results.some((other) => other !== el && el.contains(other))
+    )
+    const pool = innermost.length ? innermost : results
+
+    const wanted = normalizeText(target)
+    const exact = pool.filter((el) => normalizeText(el.innerText || el.textContent || "") === wanted)
+    return exact.length ? exact : pool
   }
 
   function resolveLocator(locator) {
@@ -1159,7 +1183,11 @@ async function toolNavigate({ url, tabId }) {
 // A session we open ourselves is released again afterwards, so we never leave
 // the "is debugging this browser" banner up; a session already opened by the
 // console/errors tools is borrowed and left exactly as we found it.
-async function dispatchTrustedClick(tabId, x, y) {
+// Run `fn` with a debugger session on `tabId`. A session we open ourselves is
+// released again afterwards, so the "is debugging this browser" banner doesn't
+// linger; one already opened by the console/errors tools is borrowed and left
+// exactly as we found it.
+async function withDebuggerSession(tabId, fn) {
   const availability = await ensureDebuggerAvailable()
   if (!availability.ok) return { ok: false, reason: availability.reason }
 
@@ -1176,6 +1204,18 @@ async function dispatchTrustedClick(tabId, x, y) {
   }
 
   try {
+    return await fn()
+  } catch (e) {
+    return { ok: false, reason: e?.message || String(e) }
+  } finally {
+    if (borrowed && chrome.debugger?.detach) {
+      await chrome.debugger.detach({ tabId }).catch(() => {})
+    }
+  }
+}
+
+async function dispatchTrustedClick(tabId, x, y) {
+  return withDebuggerSession(tabId, async () => {
     const at = { x, y, button: "left" }
     await chrome.debugger.sendCommand({ tabId }, "Input.dispatchMouseEvent", {
       ...at,
@@ -1196,13 +1236,7 @@ async function dispatchTrustedClick(tabId, x, y) {
       clickCount: 1,
     })
     return { ok: true }
-  } catch (e) {
-    return { ok: false, reason: e?.message || String(e) }
-  } finally {
-    if (borrowed && chrome.debugger?.detach) {
-      await chrome.debugger.detach({ tabId }).catch(() => {})
-    }
-  }
+  })
 }
 
 async function toolClick({ selector, tabId, index = 0, timeoutMs, pollMs }) {
@@ -1264,8 +1298,34 @@ async function toolSelect({ selector, value, label, optionIndex, tabId, index = 
 
 async function toolScreenshot({ tabId }) {
   const tab = await getTabById(tabId)
-  const png = await chrome.tabs.captureVisibleTab(tab.windowId, { format: "png" })
-  return { tabId: tab.id, content: png }
+
+  // `captureVisibleTab` ignores the tab id entirely and grabs whatever its
+  // window happens to be showing, so asking for a background tab silently
+  // returns an unrelated page -- someone else's inbox, in the worst case.
+  // Capture the tab that was actually asked for, through the debugger.
+  const shot = await withDebuggerSession(tab.id, async () => {
+    const result = await chrome.debugger.sendCommand({ tabId: tab.id }, "Page.captureScreenshot", {
+      format: "png",
+      captureBeyondViewport: false,
+    })
+    if (!result?.data) return { ok: false, reason: "Page.captureScreenshot returned no data" }
+    return { ok: true, data: result.data }
+  })
+
+  if (shot.ok) {
+    return { tabId: tab.id, content: `data:image/png;base64,${shot.data}` }
+  }
+
+  if (tab.active) {
+    const png = await chrome.tabs.captureVisibleTab(tab.windowId, { format: "png" })
+    return { tabId: tab.id, content: png }
+  }
+
+  // Never substitute a different tab's contents for the one requested.
+  throw new Error(
+    `Cannot capture tab ${tab.id} (${tab.title || tab.url || "untitled"}): it is not the visible ` +
+      `tab and the debugger is unavailable (${shot.reason}). Activate the tab and retry.`
+  )
 }
 
 async function toolSnapshot({ tabId }) {

@@ -113,6 +113,14 @@ keep hitting the overlay.
 - CLI debugging (optional, talks to the same broker):
   `npx @different-ai/opencode-browser tool browser_status`
 - Always confirm results after each action.
+- **Prefer unique selectors to `index`.** Pages that mutate asynchronously
+  (GitHub's "Potential duplicate" bar, lazy toolbars) shift element order
+  between a `browser_query` listing and a later `browser_click`, so index 12 can
+  be a different button by the time you click it. Use `text:`, `aria:`,
+  `label:` or a specific CSS selector; if you must use an index, re-query
+  immediately before clicking.
+- `browser_screenshot` captures the tab you name, including background tabs. If
+  it cannot, it errors — it will never hand back a different tab's contents.
 - **Verify what you typed.** `browser_type` reports the text it sent, not what
   landed. Read it back with `browser_query` `mode=value` — markdown editors and
   rich text fields can swallow or transform input.

@@ -156,6 +156,32 @@ keeps ID `ncfalpcdanbcccbaakenefpokeioldgd` and the native messaging host's
 `allowed_origins` still matches, wherever the directory lives. The flip side:
 it and the upstream extension **cannot both be loaded** — same ID.
 
+## Selector resolution
+
+`findByText` matched on a **substring** of `innerText` and included `[tabindex]`
+in its candidate list, so any dialog or form wrapper carrying `tabindex="-1"`
+matched every string inside it — and, being an ancestor, sorted first in
+document order. `text:Linux X11` on a GitHub issue form resolved to a
+page-sized `<div>`, and since a trusted click aims at the element's centre, the
+click landed in empty space in the middle of the form.
+
+Matches are now ranked before being returned: innermost first (any element
+containing another match is dropped), then elements whose own text *equals* the
+target ahead of ones that merely contain it. The same selector now resolves to
+`SPAN#_r_a_`, the button's label.
+
+## Screenshots capture the tab you asked for
+
+`toolScreenshot` called `chrome.tabs.captureVisibleTab(tab.windowId)`, which
+ignores the tab id and returns whatever that window is currently showing. Asking
+for a background tab silently handed back an unrelated page — someone's inbox,
+in the worst case.
+
+It now captures the requested tab with `Page.captureScreenshot` over the
+debugger, which works on background tabs. `captureVisibleTab` is used only when
+the tab genuinely is the visible one, and if neither path is available the tool
+**throws** rather than substituting a different tab's contents.
+
 ### Why not upstream's CDP rewrite?
 
 Upstream replaced this whole architecture with direct CDP in May 2026 (v5.0.0,
