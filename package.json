@@ -15,6 +15,7 @@
     "LICENSE"
   ],
   "scripts": {
+    "test": "node --test bin/server.test.mjs",
     "check": "node bin/server.mjs --check",
     "start": "node bin/server.mjs",
     "setup": "./install.sh",

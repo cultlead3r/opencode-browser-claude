@@ -70,6 +70,32 @@ Restart Claude Code (or start a new session) and the tools appear as
 ./install.sh --scope project              # write a committable .mcp.json in the cwd instead
 ```
 
+### Connect Codex to the same extension
+
+With this bridge and your modified extension already installed, run from this
+repository:
+
+```bash
+codex mcp add opencode-browser --env OPENCODE_BROWSER_BACKEND=extension -- "$PWD/bin/run.sh"
+```
+
+Restart Codex's MCP connection or start a new session to load the tools. Codex,
+Claude Code, and OpenCode share the existing extension and broker. This command
+does not reinstall the extension or change the Claude configuration. The MCP
+bridge returns screenshots as image content so both MCP clients can view them.
+
+Trusted clicks can work on background tabs without activating them. In a local
+Brave retest, all seven clicks were independently confirmed with `isTrusted:
+true`: one foreground control, four clicks behind another tab, one in an
+unfocused window, and one in a minimized window. Typing and debugger screenshots
+also worked while minimized. The earlier background-click failure did not
+reproduce; its cause remains unknown.
+
+A `(trusted)` result identifies the CDP input path and means its commands
+completed; it does not confirm that the intended element received the click or
+that the expected action occurred. Verify the resulting page state after clicks,
+regardless of tab visibility.
+
 ## Verify
 
 ```bash

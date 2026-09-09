@@ -1,0 +1,65 @@
+[
+  {
+    "n": 1,
+    "result": "Clicked #target (trusted)"
+  },
+  {
+    "n": 2,
+    "result": "Clicked #target (trusted)"
+  },
+  {
+    "n": 3,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Clicked #target (trusted)"
+        }
+      ]
+    }
+  },
+  {
+    "n": 4,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Clicked #target (trusted)"
+        }
+      ]
+    }
+  },
+  {
+    "n": 5,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Clicked #target (trusted)"
+        }
+      ]
+    }
+  },
+  {
+    "n": 6,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Clicked #target (trusted)"
+        }
+      ]
+    }
+  },
+  {
+    "n": 7,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Clicked #target (trusted)"
+        }
+      ]
+    }
+  }
+]

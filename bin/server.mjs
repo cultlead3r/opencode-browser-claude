@@ -225,7 +225,9 @@ async function loadTools() {
     toolMap = instance?.tool || {};
     toolList = Object.entries(toolMap).map(([name, def]) => ({
       name,
-      description: def?.description || "",
+      description: name === "browser_screenshot"
+        ? "Take a screenshot of the specified tab, or the session's default tab. Returns an MCP image."
+        : def?.description || "",
       inputSchema: buildInputSchema(def?.args),
     }));
     log(`loaded ${toolList.length} tools from ${pluginPath}`);
@@ -295,6 +297,16 @@ async function handleMessage(msg) {
       inFlight++;
       try {
         const result = await tool.execute(args, {});
+        if (name === "browser_screenshot") {
+          const image = typeof result === "string"
+            ? /^data:(image\/(?:png|jpeg|webp));base64,([A-Za-z0-9+/]+={0,2})$/.exec(result)
+            : null;
+          if (!image) throw new Error("Screenshot did not return a valid image data URL");
+          reply(id, {
+            content: [{ type: "image", mimeType: image[1], data: image[2] }],
+          });
+          return;
+        }
         const text =
           typeof result === "string"
             ? result

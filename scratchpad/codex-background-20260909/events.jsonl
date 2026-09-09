@@ -1,0 +1,179 @@
+{"kind": "loaded", "count": 0, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961085348, "phase": "setup", "receivedAt": 1788961085.355702}
+{"kind": "heartbeat", "count": 0, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961086349, "phase": "setup", "receivedAt": 1788961086.356192}
+{"kind": "heartbeat", "count": 0, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961087349, "phase": "setup", "receivedAt": 1788961087.354611}
+{"kind": "heartbeat", "count": 0, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961088349, "phase": "setup", "receivedAt": 1788961088.3549829}
+{"kind": "heartbeat", "count": 0, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961089349, "phase": "setup", "receivedAt": 1788961089.353712}
+{"kind": "heartbeat", "count": 0, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961090350, "phase": "setup", "receivedAt": 1788961090.354182}
+{"kind": "heartbeat", "count": 0, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961091349, "phase": "setup", "receivedAt": 1788961091.354667}
+{"kind": "heartbeat", "count": 0, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961092349, "phase": "setup", "receivedAt": 1788961092.354574}
+{"kind": "heartbeat", "count": 0, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961093350, "phase": "setup", "receivedAt": 1788961093.354902}
+{"kind": "heartbeat", "count": 0, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961094350, "phase": "setup", "receivedAt": 1788961094.356302}
+{"kind": "heartbeat", "count": 0, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961095349, "phase": "setup", "receivedAt": 1788961095.354955}
+{"kind": "pointerdown", "count": 0, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961096193, "isTrusted": true, "target": "target", "eventType": "pointerdown", "phase": "1-active-focused", "receivedAt": 1788961096.200726}
+{"kind": "mousedown", "count": 0, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961096194, "isTrusted": true, "target": "target", "eventType": "mousedown", "phase": "1-active-focused", "receivedAt": 1788961096.201178}
+{"kind": "mouseup", "count": 0, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961096199, "isTrusted": true, "target": "target", "eventType": "mouseup", "phase": "1-active-focused", "receivedAt": 1788961096.201504}
+{"kind": "click", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961096199, "isTrusted": true, "target": "target", "eventType": "click", "phase": "1-active-focused", "receivedAt": 1788961096.202518}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961096349, "phase": "1-active-focused", "receivedAt": 1788961096.35118}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961097349, "phase": "1-active-focused", "receivedAt": 1788961097.3526652}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961098349, "phase": "1-active-focused", "receivedAt": 1788961098.354486}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961099350, "phase": "1-active-focused", "receivedAt": 1788961099.355836}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961100349, "phase": "1-active-focused", "receivedAt": 1788961100.352603}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961101350, "phase": "1-active-focused", "receivedAt": 1788961101.352166}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961102350, "phase": "1-active-focused", "receivedAt": 1788961102.3533099}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961103349, "phase": "1-active-focused", "receivedAt": 1788961103.3546722}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961104350, "phase": "1-active-focused", "receivedAt": 1788961104.355059}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961105349, "phase": "1-active-focused", "receivedAt": 1788961105.36202}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961106349, "phase": "1-active-focused", "receivedAt": 1788961106.353224}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961107349, "phase": "1-active-focused", "receivedAt": 1788961107.353436}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961108350, "phase": "1-active-focused", "receivedAt": 1788961108.3561249}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961109350, "phase": "1-active-focused", "receivedAt": 1788961109.354986}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961110349, "phase": "1-active-focused", "receivedAt": 1788961110.352035}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961111350, "phase": "1-active-focused", "receivedAt": 1788961111.3563552}
+{"kind": "blur", "count": 1, "visibility": "visible", "hasFocus": false, "value": "", "time": 1788961111677, "phase": "1-active-focused", "receivedAt": 1788961111.684586}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": false, "value": "", "time": 1788961112350, "phase": "1-active-focused", "receivedAt": 1788961112.353817}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": false, "value": "", "time": 1788961113349, "phase": "1-active-focused", "receivedAt": 1788961113.3547132}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": false, "value": "", "time": 1788961114349, "phase": "1-active-focused", "receivedAt": 1788961114.353525}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": false, "value": "", "time": 1788961115349, "phase": "1-active-focused", "receivedAt": 1788961115.353268}
+{"kind": "heartbeat", "count": 1, "visibility": "visible", "hasFocus": false, "value": "", "time": 1788961116349, "phase": "1-active-focused", "receivedAt": 1788961116.3546162}
+{"kind": "focus", "count": 1, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961116768, "phase": "1-active-focused", "receivedAt": 1788961116.7831419}
+{"kind": "blur", "count": 1, "visibility": "visible", "hasFocus": false, "value": "", "time": 1788961116768, "phase": "1-active-focused", "receivedAt": 1788961116.783492}
+{"kind": "visibilitychange", "count": 1, "visibility": "hidden", "hasFocus": false, "value": "", "time": 1788961116769, "phase": "1-active-focused", "receivedAt": 1788961116.783922}
+{"kind": "focus", "count": 1, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961117157, "phase": "2-hidden-same-window", "receivedAt": 1788961117.1626828}
+{"kind": "heartbeat", "count": 1, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961118280, "phase": "2-hidden-same-window", "receivedAt": 1788961118.285394}
+{"kind": "heartbeat", "count": 1, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961119281, "phase": "2-hidden-same-window", "receivedAt": 1788961119.285759}
+{"kind": "heartbeat", "count": 1, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961120280, "phase": "2-hidden-same-window", "receivedAt": 1788961120.282633}
+{"kind": "heartbeat", "count": 1, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961121279, "phase": "2-hidden-same-window", "receivedAt": 1788961121.2832808}
+{"kind": "pointerdown", "count": 1, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961122161, "isTrusted": true, "target": "target", "eventType": "pointerdown", "phase": "2-hidden-same-window", "receivedAt": 1788961122.163177}
+{"kind": "mousedown", "count": 1, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961122161, "isTrusted": true, "target": "target", "eventType": "mousedown", "phase": "2-hidden-same-window", "receivedAt": 1788961122.1646478}
+{"kind": "mouseup", "count": 1, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961122164, "isTrusted": true, "target": "target", "eventType": "mouseup", "phase": "2-hidden-same-window", "receivedAt": 1788961122.166581}
+{"kind": "click", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961122164, "isTrusted": true, "target": "target", "eventType": "click", "phase": "2-hidden-same-window", "receivedAt": 1788961122.166752}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961122279, "phase": "2-hidden-same-window", "receivedAt": 1788961122.2810612}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961123280, "phase": "2-hidden-same-window", "receivedAt": 1788961123.2840471}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961124280, "phase": "2-hidden-same-window", "receivedAt": 1788961124.283473}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961125279, "phase": "2-hidden-same-window", "receivedAt": 1788961125.283742}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961126279, "phase": "2-hidden-same-window", "receivedAt": 1788961126.282698}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961127280, "phase": "2-hidden-same-window", "receivedAt": 1788961127.2954829}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961128280, "phase": "2-hidden-same-window", "receivedAt": 1788961128.2827609}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961129280, "phase": "2-hidden-same-window", "receivedAt": 1788961129.284307}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961130285, "phase": "2-hidden-same-window", "receivedAt": 1788961130.287554}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961131280, "phase": "2-hidden-same-window", "receivedAt": 1788961131.2839522}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961132280, "phase": "2-hidden-same-window", "receivedAt": 1788961132.2838368}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961133280, "phase": "2-hidden-same-window", "receivedAt": 1788961133.284767}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961134279, "phase": "3-hidden-same-window", "receivedAt": 1788961134.281622}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961135280, "phase": "3-hidden-same-window", "receivedAt": 1788961135.283793}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961136280, "phase": "3-hidden-same-window", "receivedAt": 1788961136.2834911}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961137280, "phase": "3-hidden-same-window", "receivedAt": 1788961137.284364}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961138280, "phase": "3-hidden-same-window", "receivedAt": 1788961138.282012}
+{"kind": "heartbeat", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961139280, "phase": "3-hidden-same-window", "receivedAt": 1788961139.2843058}
+{"kind": "pointerdown", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961139466, "isTrusted": true, "target": "target", "eventType": "pointerdown", "phase": "3-hidden-same-window", "receivedAt": 1788961139.470583}
+{"kind": "mousedown", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961139467, "isTrusted": true, "target": "target", "eventType": "mousedown", "phase": "3-hidden-same-window", "receivedAt": 1788961139.4711318}
+{"kind": "mouseup", "count": 2, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961139468, "isTrusted": true, "target": "target", "eventType": "mouseup", "phase": "3-hidden-same-window", "receivedAt": 1788961139.471932}
+{"kind": "click", "count": 3, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961139470, "isTrusted": true, "target": "target", "eventType": "click", "phase": "3-hidden-same-window", "receivedAt": 1788961139.473105}
+{"kind": "heartbeat", "count": 3, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961140310, "phase": "4-hidden-same-window", "receivedAt": 1788961140.314214}
+{"kind": "heartbeat", "count": 3, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961142279, "phase": "4-hidden-same-window", "receivedAt": 1788961142.281718}
+{"kind": "heartbeat", "count": 3, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961143280, "phase": "4-hidden-same-window", "receivedAt": 1788961143.283606}
+{"kind": "heartbeat", "count": 3, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961144280, "phase": "4-hidden-same-window", "receivedAt": 1788961144.285577}
+{"kind": "mousedown", "count": 3, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961145145, "isTrusted": true, "target": "target", "eventType": "mousedown", "phase": "4-hidden-same-window", "receivedAt": 1788961145.14854}
+{"kind": "pointerdown", "count": 3, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961145144, "isTrusted": true, "target": "target", "eventType": "pointerdown", "phase": "4-hidden-same-window", "receivedAt": 1788961145.147955}
+{"kind": "click", "count": 4, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961145147, "isTrusted": true, "target": "target", "eventType": "click", "phase": "4-hidden-same-window", "receivedAt": 1788961145.152169}
+{"kind": "mouseup", "count": 3, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961145147, "isTrusted": true, "target": "target", "eventType": "mouseup", "phase": "4-hidden-same-window", "receivedAt": 1788961145.151293}
+{"kind": "heartbeat", "count": 4, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961145280, "phase": "4-hidden-same-window", "receivedAt": 1788961145.282895}
+{"kind": "heartbeat", "count": 4, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961146280, "phase": "5-hidden-same-window", "receivedAt": 1788961146.282832}
+{"kind": "heartbeat", "count": 4, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961147279, "phase": "5-hidden-same-window", "receivedAt": 1788961147.283432}
+{"kind": "heartbeat", "count": 4, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961148280, "phase": "5-hidden-same-window", "receivedAt": 1788961148.284844}
+{"kind": "heartbeat", "count": 4, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961149280, "phase": "5-hidden-same-window", "receivedAt": 1788961149.285832}
+{"kind": "heartbeat", "count": 4, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961150279, "phase": "5-hidden-same-window", "receivedAt": 1788961150.285059}
+{"kind": "pointerdown", "count": 4, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961150814, "isTrusted": true, "target": "target", "eventType": "pointerdown", "phase": "5-hidden-same-window", "receivedAt": 1788961150.8191879}
+{"kind": "mousedown", "count": 4, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961150815, "isTrusted": true, "target": "target", "eventType": "mousedown", "phase": "5-hidden-same-window", "receivedAt": 1788961150.8196192}
+{"kind": "mouseup", "count": 4, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961150817, "isTrusted": true, "target": "target", "eventType": "mouseup", "phase": "5-hidden-same-window", "receivedAt": 1788961150.819948}
+{"kind": "click", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961150818, "isTrusted": true, "target": "target", "eventType": "click", "phase": "5-hidden-same-window", "receivedAt": 1788961150.8210711}
+{"kind": "heartbeat", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961151279, "phase": "5-hidden-same-window", "receivedAt": 1788961151.28135}
+{"kind": "heartbeat", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961152281, "phase": "5-hidden-same-window", "receivedAt": 1788961152.286533}
+{"kind": "heartbeat", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961153279, "phase": "5-hidden-same-window", "receivedAt": 1788961153.283316}
+{"kind": "heartbeat", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961154279, "phase": "5-hidden-same-window", "receivedAt": 1788961154.285453}
+{"kind": "heartbeat", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961155280, "phase": "5-hidden-same-window", "receivedAt": 1788961155.2845562}
+{"kind": "heartbeat", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961156280, "phase": "5-hidden-same-window", "receivedAt": 1788961156.283802}
+{"kind": "heartbeat", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961157280, "phase": "5-hidden-same-window", "receivedAt": 1788961157.286}
+{"kind": "heartbeat", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961158280, "phase": "5-hidden-same-window", "receivedAt": 1788961158.284267}
+{"kind": "heartbeat", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961159279, "phase": "5-hidden-same-window", "receivedAt": 1788961159.284388}
+{"kind": "heartbeat", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961160280, "phase": "5-hidden-same-window", "receivedAt": 1788961160.2863958}
+{"kind": "heartbeat", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961161280, "phase": "5-hidden-same-window", "receivedAt": 1788961161.2843578}
+{"kind": "heartbeat", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961162280, "phase": "5-hidden-same-window", "receivedAt": 1788961162.282675}
+{"kind": "heartbeat", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961163280, "phase": "5-hidden-same-window", "receivedAt": 1788961163.285409}
+{"kind": "heartbeat", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961164279, "phase": "5-hidden-same-window", "receivedAt": 1788961164.282597}
+{"kind": "heartbeat", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961165279, "phase": "5-hidden-same-window", "receivedAt": 1788961165.283812}
+{"kind": "heartbeat", "count": 5, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961166280, "phase": "5-hidden-same-window", "receivedAt": 1788961166.285939}
+{"kind": "visibilitychange", "count": 5, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961166873, "phase": "5-hidden-same-window", "receivedAt": 1788961166.881579}
+{"kind": "heartbeat", "count": 5, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961166873, "phase": "5-hidden-same-window", "receivedAt": 1788961166.8818681}
+{"kind": "pointerdown", "count": 5, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961167194, "isTrusted": true, "target": "target", "eventType": "pointerdown", "phase": "6-selected-unfocused", "receivedAt": 1788961167.196308}
+{"kind": "mouseup", "count": 5, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961167195, "isTrusted": true, "target": "target", "eventType": "mouseup", "phase": "6-selected-unfocused", "receivedAt": 1788961167.196717}
+{"kind": "mousedown", "count": 5, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961167194, "isTrusted": true, "target": "target", "eventType": "mousedown", "phase": "6-selected-unfocused", "receivedAt": 1788961167.196919}
+{"kind": "click", "count": 6, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961167195, "isTrusted": true, "target": "target", "eventType": "click", "phase": "6-selected-unfocused", "receivedAt": 1788961167.1982799}
+{"kind": "heartbeat", "count": 6, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961167349, "phase": "6-selected-unfocused", "receivedAt": 1788961167.3512251}
+{"kind": "heartbeat", "count": 6, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961168349, "phase": "6-selected-unfocused", "receivedAt": 1788961168.352365}
+{"kind": "heartbeat", "count": 6, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961169349, "phase": "6-selected-unfocused", "receivedAt": 1788961169.353933}
+{"kind": "heartbeat", "count": 6, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961170349, "phase": "6-selected-unfocused", "receivedAt": 1788961170.353844}
+{"kind": "heartbeat", "count": 6, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961171349, "phase": "6-selected-unfocused", "receivedAt": 1788961171.355535}
+{"kind": "heartbeat", "count": 6, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961172349, "phase": "6-selected-unfocused", "receivedAt": 1788961172.3514628}
+{"kind": "heartbeat", "count": 6, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961173350, "phase": "6-selected-unfocused", "receivedAt": 1788961173.354618}
+{"kind": "heartbeat", "count": 6, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961174349, "phase": "6-selected-unfocused", "receivedAt": 1788961174.354303}
+{"kind": "heartbeat", "count": 6, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961175349, "phase": "6-selected-unfocused", "receivedAt": 1788961175.35509}
+{"kind": "heartbeat", "count": 6, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961176349, "phase": "6-selected-unfocused", "receivedAt": 1788961176.35435}
+{"kind": "heartbeat", "count": 6, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961177348, "phase": "6-selected-unfocused", "receivedAt": 1788961177.3533142}
+{"kind": "blur", "count": 6, "visibility": "visible", "hasFocus": false, "value": "", "time": 1788961178738, "phase": "7-minimized", "receivedAt": 1788961178.7562099}
+{"kind": "heartbeat", "count": 6, "visibility": "visible", "hasFocus": true, "value": "", "time": 1788961178348, "phase": "7-minimized", "receivedAt": 1788961178.755743}
+{"kind": "visibilitychange", "count": 6, "visibility": "hidden", "hasFocus": false, "value": "", "time": 1788961178748, "phase": "7-minimized", "receivedAt": 1788961178.756587}
+{"kind": "focus", "count": 6, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961178941, "phase": "7-minimized", "receivedAt": 1788961178.942973}
+{"kind": "heartbeat", "count": 6, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961180278, "phase": "7-minimized", "receivedAt": 1788961180.283966}
+{"kind": "heartbeat", "count": 6, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961181278, "phase": "7-minimized", "receivedAt": 1788961181.282775}
+{"kind": "heartbeat", "count": 6, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961182276, "phase": "7-minimized", "receivedAt": 1788961182.2805078}
+{"kind": "heartbeat", "count": 6, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961183277, "phase": "7-minimized", "receivedAt": 1788961183.2823732}
+{"kind": "mousedown", "count": 6, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961183945, "isTrusted": true, "target": "target", "eventType": "mousedown", "phase": "7-minimized", "receivedAt": 1788961183.951256}
+{"kind": "pointerdown", "count": 6, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961183944, "isTrusted": true, "target": "target", "eventType": "pointerdown", "phase": "7-minimized", "receivedAt": 1788961183.951606}
+{"kind": "click", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961183948, "isTrusted": true, "target": "target", "eventType": "click", "phase": "7-minimized", "receivedAt": 1788961183.952624}
+{"kind": "mouseup", "count": 6, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961183947, "isTrusted": true, "target": "target", "eventType": "mouseup", "phase": "7-minimized", "receivedAt": 1788961183.95207}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "", "time": 1788961184277, "phase": "7-minimized", "receivedAt": 1788961184.279957}
+{"kind": "input", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961184311, "isTrusted": false, "target": "entry", "eventType": "input", "phase": "7-minimized", "receivedAt": 1788961184.314434}
+{"kind": "change", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961184312, "isTrusted": false, "target": "entry", "eventType": "change", "phase": "7-minimized", "receivedAt": 1788961184.3145988}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961185277, "phase": "7-minimized", "receivedAt": 1788961185.2801669}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961186276, "phase": "7-minimized", "receivedAt": 1788961186.279907}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961187276, "phase": "7-minimized", "receivedAt": 1788961187.281447}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961188276, "phase": "7-minimized", "receivedAt": 1788961188.280701}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961189275, "phase": "7-minimized", "receivedAt": 1788961189.27969}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961190276, "phase": "7-minimized", "receivedAt": 1788961190.2801862}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961191275, "phase": "7-minimized", "receivedAt": 1788961191.280617}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961192275, "phase": "7-minimized", "receivedAt": 1788961192.278599}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961193189, "phase": "7-minimized", "receivedAt": 1788961193.200468}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961194275, "phase": "7-minimized", "receivedAt": 1788961194.280559}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961195274, "phase": "7-minimized", "receivedAt": 1788961195.279488}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961196274, "phase": "7-minimized", "receivedAt": 1788961196.279788}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961197274, "phase": "7-minimized", "receivedAt": 1788961197.278949}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961198273, "phase": "7-minimized", "receivedAt": 1788961198.288049}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961199273, "phase": "7-minimized", "receivedAt": 1788961199.276065}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961200274, "phase": "7-minimized", "receivedAt": 1788961200.279829}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961201273, "phase": "7-minimized", "receivedAt": 1788961201.2779121}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961202273, "phase": "7-minimized", "receivedAt": 1788961202.2763882}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961203273, "phase": "7-minimized", "receivedAt": 1788961203.278765}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961204274, "phase": "7-minimized", "receivedAt": 1788961204.2791018}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961205273, "phase": "7-minimized", "receivedAt": 1788961205.278692}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961206273, "phase": "7-minimized", "receivedAt": 1788961206.278028}
+{"kind": "heartbeat", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961207273, "phase": "7-minimized", "receivedAt": 1788961207.541879}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961207550, "phase": "7-minimized", "receivedAt": 1788961207.5570428}
+{"kind": "visibilitychange", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961207550, "phase": "7-minimized", "receivedAt": 1788961207.5566301}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961208343, "phase": "7-minimized", "receivedAt": 1788961208.347274}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961209343, "phase": "7-minimized", "receivedAt": 1788961209.348048}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961210343, "phase": "7-minimized", "receivedAt": 1788961210.347871}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961211342, "phase": "7-minimized", "receivedAt": 1788961211.34765}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961212342, "phase": "7-minimized", "receivedAt": 1788961212.346952}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961213342, "phase": "7-minimized", "receivedAt": 1788961213.3465128}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961214342, "phase": "7-minimized", "receivedAt": 1788961214.347428}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961215342, "phase": "7-minimized", "receivedAt": 1788961215.348096}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961216342, "phase": "7-minimized", "receivedAt": 1788961216.347602}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961217342, "phase": "7-minimized", "receivedAt": 1788961217.3476539}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961218342, "phase": "7-minimized", "receivedAt": 1788961218.347517}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961219342, "phase": "7-minimized", "receivedAt": 1788961219.3476899}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961220342, "phase": "7-minimized", "receivedAt": 1788961220.347708}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961221342, "phase": "7-minimized", "receivedAt": 1788961221.3466299}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961222342, "phase": "7-minimized", "receivedAt": 1788961222.345431}
+{"kind": "heartbeat", "count": 7, "visibility": "visible", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961223342, "phase": "7-minimized", "receivedAt": 1788961223.34763}
+{"kind": "visibilitychange", "count": 7, "visibility": "hidden", "hasFocus": true, "value": "typed-while-minimized", "time": 1788961223917, "phase": "7-minimized", "receivedAt": 1788961223.945462}
