@@ -107,9 +107,12 @@ keep hitting the overlay.
   verify with `browser_query`.
 - For scrollable containers, pass both `selector` and `x`/`y` to `browser_scroll`
   and verify `scrollTop`.
-- If tools return "Chrome extension is not connected", ensure the
-  opencode-browser extension is loaded/enabled in the browser and re-run
-  `bunx @different-ai/opencode-browser@latest install` if needed.
+- If tools return "Chrome extension is not connected (native host offline)",
+  the usual cause is that no window is open in the browser profile that has
+  the extension: closing a profile's last window stops its extensions. Ask the
+  user to open a window in that profile, then retry. Only if that doesn't help,
+  check the extension is loaded/enabled and re-run
+  `bunx @different-ai/opencode-browser@latest install`.
 - CLI debugging (optional, talks to the same broker):
   `npx @different-ai/opencode-browser tool browser_status`
 - Always confirm results after each action.

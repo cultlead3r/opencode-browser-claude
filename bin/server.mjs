@@ -249,6 +249,18 @@ function replyError(id, code, message) {
   send({ jsonrpc: "2.0", id, error: { code, message } });
 }
 
+// The extension runs only while its browser profile is loaded. Closing that
+// profile's last window unloads it, which takes the native host down too, so
+// the broker's bare "native host offline" gets told what to do about it.
+const HOST_OFFLINE_HINT =
+  " The browser extension isn't running. Open a browser window in the profile " +
+  "that has the OpenCode Browser extension, then retry.";
+
+function errorText(err) {
+  const message = err?.message || String(err);
+  return /native host offline/.test(message) ? message + HOST_OFFLINE_HINT : message;
+}
+
 let inFlight = 0;
 let stdinEnded = false;
 function maybeExit() {
@@ -316,7 +328,7 @@ async function handleMessage(msg) {
         log(`tool ${name} error: ${err?.stack || err}`);
         reply(id, {
           content: [
-            { type: "text", text: `Error: ${err?.message || String(err)}` },
+            { type: "text", text: `Error: ${errorText(err)}` },
           ],
           isError: true,
         });

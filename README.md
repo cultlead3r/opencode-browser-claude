@@ -246,8 +246,11 @@ spawn MCP servers with a minimal `PATH`.
 
 - **`claude mcp get opencode-browser` not connected** → run `node bin/server.mjs --check`.
   If it can't find the plugin, run the upstream installer (see Prerequisites).
-- **"Chrome extension is not connected"** → the browser extension isn't loaded/enabled.
-  Re-run `bunx @different-ai/opencode-browser@latest install` and pin the extension.
+- **"Chrome extension is not connected (native host offline)"** → usually no window is
+  open in the browser profile that has the extension. Closing a profile's last window
+  stops its extensions, and the native host with them; open a window in that profile
+  and retry. If it still fails, the extension isn't loaded/enabled: re-run
+  `bunx @different-ai/opencode-browser@latest install` and pin the extension.
 - **Tools don't show up in Claude Code** → restart Claude Code; confirm with `claude mcp list`.
 - **Windows** → `run.sh` is POSIX-only; register the server directly instead:
   `claude mcp add opencode-browser -s user -- node C:\path\to\bin\server.mjs`

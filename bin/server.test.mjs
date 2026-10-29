@@ -18,7 +18,10 @@ test("MCP screenshots are images; text and error responses remain compatible", a
         if (args.fail) throw new Error("Debugger unavailable");
         return args.invalid ? "Screenshot failed" : "data:image/png;base64,${png}";
       } },
-      browser_click: { args: {}, async execute() { return "Clicked button (trusted)"; } }
+      browser_click: { args: {}, async execute() { return "Clicked button (trusted)"; } },
+      browser_open_tab: { args: {}, async execute() {
+        throw new Error("Chrome extension is not connected (native host offline)");
+      } }
     } });`);
     child = spawn(process.execPath, [fileURLToPath(new URL("./server.mjs", import.meta.url))], {
       env: { ...process.env, OPENCODE_BROWSER_PLUGIN_PATH: pluginPath },
@@ -42,6 +45,7 @@ test("MCP screenshots are images; text and error responses remain compatible", a
         { id: 4, method: "tools/call", params: { name: "browser_click" } },
         { id: 5, method: "tools/call", params: { name: "browser_screenshot", arguments: { invalid: true } } },
         { id: 6, method: "tools/call", params: { name: "browser_screenshot", arguments: { fail: true } } },
+        { id: 7, method: "tools/call", params: { name: "browser_open_tab" } },
       ];
       child.stdin.end(messages.map(message => JSON.stringify({ jsonrpc: "2.0", ...message }) + "\n").join(""));
       assert.equal(await closed, 0, stderr);
@@ -52,9 +56,9 @@ test("MCP screenshots are images; text and error responses remain compatible", a
       const response = JSON.parse(line);
       return [response.id, response.result];
     }));
-    assert.equal(responses.size, 6);
+    assert.equal(responses.size, 7);
     assert.equal(responses.get(1).protocolVersion, "2025-06-18");
-    assert.equal(responses.get(2).tools.length, 2);
+    assert.equal(responses.get(2).tools.length, 3);
     assert.deepEqual(responses.get(3), { content: [{ type: "image", mimeType: "image/png", data: png }] });
     assert.deepEqual(responses.get(4), { content: [{ type: "text", text: "Clicked button (trusted)" }] });
     for (const id of [5, 6]) {
@@ -63,6 +67,8 @@ test("MCP screenshots are images; text and error responses remain compatible", a
     }
     assert.match(responses.get(5).content[0].text, /valid image data URL/);
     assert.match(responses.get(6).content[0].text, /Debugger unavailable/);
+    assert.equal(responses.get(7).isError, true);
+    assert.match(responses.get(7).content[0].text, /native host offline\) The browser extension isn't running/);
   } finally {
     if (child && child.exitCode === null) child.kill();
     await rm(dir, { recursive: true, force: true });
